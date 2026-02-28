@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Communication Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+    <aside class="sidebar">
+        <h1>EmailAssist</h1>
+        <h3>Professional email drafting assistant</h3>
+    </aside>
+
+    <main class="main">
+        <header class="header">
+            Email Communication Assistant
+        </header>
+
+        <section class="chat" id="chat">
+            <div class="message bot intro">
+                   Describe your email requirement below.
+            </div>
+        </section>
+
+        <section class="input-card">
+            <textarea id="context" placeholder="Describe your email request..."></textarea>
+
+            <div class="controls">
+                <select id="tone">
+                    <option value="Formal">Formal</option>
+                    <option value="Informal">Informal</option>
+                </select>
+                <button onclick="send()">Generate Email</button>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
